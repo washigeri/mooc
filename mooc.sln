@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mooc", "mooc\mooc.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessBoardModule2", "ChessBoardModule2\ChessBoardModule2.csproj", "{0A0A2514-DB53-4680-BBEC-CD450E092BC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mooc_Module3", "Mooc_Module3\Mooc_Module3.csproj", "{A254906F-C33C-4916-B7A4-50FDD93CDCC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0A0A2514-DB53-4680-BBEC-CD450E092BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A0A2514-DB53-4680-BBEC-CD450E092BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A0A2514-DB53-4680-BBEC-CD450E092BC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A254906F-C33C-4916-B7A4-50FDD93CDCC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A254906F-C33C-4916-B7A4-50FDD93CDCC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A254906F-C33C-4916-B7A4-50FDD93CDCC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A254906F-C33C-4916-B7A4-50FDD93CDCC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
