@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace Module6
         string courseName;
         int credits;
         int durationInWeeks;
-        Student[] students;
+        List<Student> students;
         Teacher[] teachers;
 
         public string CourseName
@@ -53,7 +54,7 @@ namespace Module6
             }
         }
 
-        internal Student[] Students
+        internal List<Student> Students
         {
             get
             {
@@ -84,22 +85,11 @@ namespace Module6
             CourseName = name;
             Credits = credits;
             DurationInWeeks = duration;
-            Students = new Student[3];
+            Students = new List<Student>(3);
             Teachers = new Teacher[3];
         }
 
-        public bool addStudent(Student stu)
-        {
-            if (Students.Length > 3)
-            {
-                return false;
-            }
-            else
-            {
-                Students[Students.Length - 1] = stu;
-                return true;
-            }
-        }
+        
 
         public bool addTeacher(Teacher teach)
         {
@@ -114,5 +104,15 @@ namespace Module6
             }
 
         }
+
+        public void ListStudents()
+        {
+            foreach(Student stu in this.Students)
+            {
+                Console.WriteLine("Student : {0} {1}", stu.FirstName, stu.LastName);
+
+            }
+        }
+
     }
 }

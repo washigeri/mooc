@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,8 @@ namespace Module6
     class Student : Person
     {
         private static int studentsCount = 0;
+        private Stack<Int32> grades;
+
         
 
         public Student(string firstName, string lastName, string birthdate, string adressLine1, string adressLine2, string city, string stateProvince, int zipPostal, string country)
@@ -23,6 +26,9 @@ namespace Module6
             ZipPostal = zipPostal;
             Country1 = country;
             studentsCount++;
+
+            Grades = new Stack<Int32>();
+
         }
 
         public static int StudentsCount
@@ -33,6 +39,19 @@ namespace Module6
             }
 
             
+        }
+
+        public Stack<Int32> Grades
+        {
+            get
+            {
+                return grades;
+            }
+
+            set
+            {
+                grades = value;
+            }
         }
 
         public void TakeTest()
